@@ -96,7 +96,6 @@ class BookController extends Controller
      */
     public function update(UpdateBookRequest $request, Book $book)
     {
-        dd($book);
         $imagePath = $book->cover_image;
 
         if ($request->hasFile('cover_image')) {
